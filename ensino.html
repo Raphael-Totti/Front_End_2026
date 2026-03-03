@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação em C</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #34495e;
+            border-left: 5px solid #4e73df;
+            padding-left: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #2d3436;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .quiz-simples {
+            background: #f8f9fc;
+            color: #333;
+            width: 100%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #4e73df;
+            font-family: Verdana, sans-serif;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .quiz-simples h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .quiz-simples button {
+            margin-top: 8px;
+            padding: 8px 15px;
+            cursor: pointer;
+            border: none;
+            background: #4e73df;
+            color: white;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .quiz-simples button:hover {
+            background: #2e59d9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Programação em C</h1>
+    <p>Programação em C é uma das linguagens mais populares e amplamente utilizadas no desenvolvimento de software, com estruturas de controle, funções, arrays, ponteiros e manipulação de arquivos.</p>
+    <p>Nesta página vou ensinar o básico sobre a programação em C.</p>
+
+    <h2>1. Bibliotecas, Função main e Tipos de Dados</h2>
+    <p>Em C, as bibliotecas são conjuntos de funções pré-definidas que facilitam a programação. A função <b>main</b> é o ponto de entrada de um programa em C. Os tipos de dados incluem <b>int</b>, <b>float</b>, <b>char</b>, entre outros.</p>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Ola Mundo!");
+    return 0;
+}
+</code></pre>
+
+
+
+    <h2>2. Entrada/Saída e Variáveis</h2>
+    <p>A entrada e saída de dados em C são realizadas principalmente pelas funções <b>scanf</b> e <b>printf</b>.</p>
+    <p>As variáveis devem ser declaradas com um tipo específico antes de serem usadas.</p>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+int x;
+scanf("%d", &x);
+printf("%d", x);
+</code></pre>
+
+
+    <h3>Comando de Atribuição</h3>
+    <p>O comando de atribuição usa o símbolo (=). Exemplo: <b>x = 10;</b></p>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+int x;
+x = 10;
+</code></pre>
+
+    <h3>Comando de Condição</h3>
+    <p>Os comandos <b>if</b>, <b>else</b>, <b>else if</b> e <b>switch</b> permitem tomar decisões no programa.</p>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+if (x > 10) {
+    printf("Maior que 10");
+}
+</code></pre>
+
+
+    <h3>Strings</h3>
+    <p>Em C, uma string é um vetor de caracteres <b>char</b> terminado com '\0'.</p>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+char nome[20] = "Raphael";
+</code></pre>
+    <h3>Estruturas de Repetição</h3>
+    <p>As estruturas <b>for</b>, <b>while</b> e <b>do-while</b> permitem repetir blocos de código.</p>
+    <p>Exemplo de uso:</p>
+   <pre><code>
+for(int i = 0; i < 5; i++) {
+    printf("%d", i);
+}
+</code></pre>   
+
+    <!-- QUIZ AGORA NO FINAL -->
+
+    <div class="quiz-simples">
+        <h2>Quiz Básico</h2>
+
+        <p>1) Qual função mostra algo na tela?</p>
+        <button onclick="alert('Resposta: printf')">Ver Resposta</button>
+
+        <p>2) Qual símbolo usamos para atribuir valor?</p>
+        <button onclick="alert('Resposta: =')">Ver Resposta</button>
+
+        <p>3) Qual estrutura usamos para repetir código?</p>
+        <button onclick="alert('Resposta: for / while / do-while')">Ver Resposta</button>
+    </div>
+
+</div>
+
+</body>
+</html>
